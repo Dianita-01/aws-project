@@ -1,0 +1,23 @@
+{
+  "name": "aws-project",
+  "version": "1.0.0",
+  "description": "AWS Project",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dianita-01/aws-project.git"
+  },
+  "author": "diana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dianita-01/aws-project/issues"
+  },
+  "homepage": "https://github.com/Dianita-01/aws-project#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
