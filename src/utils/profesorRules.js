@@ -1,8 +1,8 @@
 import { isInvalid, baseValidationChecks } from './validationCore.js';
 
 const PROFESOR_VALIDATION_CHECKS = {
-    ...baseValidationChecks,
-    numeroEmpleado: { type: 'number' }, 
+    ...baseValidationChecks, 
+    numeroEmpleado: { type: 'string' }, 
     horasClase: { type: 'number' } 
 };
 
@@ -17,7 +17,7 @@ export const validateProfesor = (profesor) => {
     }
 
     if (!errors.horasClase && typeof profesor.horasClase === 'number' && profesor.horasClase < 0) {
-        errors.horasClase = 'Debe ser un número positivo';
+        errors.horasClase = 'debe ser un número positivo';
     }
 
     return Object.keys(errors).length > 0 ? errors : null;
