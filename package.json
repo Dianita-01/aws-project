@@ -18,6 +18,16 @@
   },
   "homepage": "https://github.com/Dianita-01/aws-project#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "@aws-sdk/client-dynamodb": "^3.940.0",
+    "@aws-sdk/client-s3": "^3.940.0",
+    "@aws-sdk/client-sns": "^3.940.0",
+    "@aws-sdk/lib-dynamodb": "^3.940.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.15.3",
+    "sequelize": "^6.37.7",
+    "uuid": "^13.0.0"
   }
 }

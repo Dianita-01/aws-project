@@ -3,7 +3,9 @@ import { isInvalid, baseValidationChecks } from './validationCore.js';
 const ALUMNO_VALIDATION_CHECKS = {
     ...baseValidationChecks, 
     matricula: { type: 'string' }, 
-    promedio: { type: 'number' } 
+    promedio: { type: 'number' },
+    password: { type: 'string' },
+    fotoPerfilUrl: { type: 'optional_string' }
 };
 
 export const validateAlumno = (alumno) => {
@@ -18,7 +20,7 @@ export const validateAlumno = (alumno) => {
 
     if (!errors.promedio && typeof alumno.promedio === 'number') {
         if (alumno.promedio < 0 || alumno.promedio > 100) {
-            errors.promedio = 'Debe estar entre 0 y 100';
+            errors.promedio = 'debe estar entre 0 y 100';
         }
     }
 
