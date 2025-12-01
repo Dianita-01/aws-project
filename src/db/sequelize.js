@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
-import AlumnoModel from '../models/alumno.js'; 
-import ProfesorModel from '../models/profesor.js';
+import AlumnoModel from '../models/Alumno.js'; 
+import ProfesorModel from '../models/Profesor.js';
 
 let sequelize = null;
 const db = {};
